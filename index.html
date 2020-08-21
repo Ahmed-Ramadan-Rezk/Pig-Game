@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pig game</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div> 
+                <div class="player-score" id="score-0">27</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">67</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn btn-new"><i class="far fa-plus-square"></i>New game</button>
+            <button class="btn btn-roll"><i class="fas fa-undo-alt"></i>Roll dice</button>
+            <button class="btn btn-hold"><i class="far fa-arrow-alt-circle-down"></i>Hold</button>
+
+            <div class="item"><img src="images/dice-5.png" alt="Dice" class="dice" id="dice-1"></div>
+            <div class="item"><img src="images/dice-5.png" alt="Dice" class="dice" id="dice-2"></div>
+
+            <div class="input-wrapper">
+                <span class="input-wrapper-desc">Score to collect:</span>
+                <input type="text" class="score-input" id="finalScoreInput" value="100">
+            </div>
+            
+            <div class="howToPlay"><i class="fas fa-question-circle"></i></div>
+        </div>
+        <div class="game-rules">
+            <h4>Game Rules:</h4>
+            <p>
+                Each player rolls the dice (ROLL DICE button) scoring points for each turn until one of the dice falls 1 or the player decides to stop (HOLD button)
+
+                If one is dropped, the player does not receive anything for this round. If a player decides to stop before throwing 1, all points earned per round are added to his total score.
+
+                Then the turn goes to another player.
+
+                The winner is the one who is the first to score 100 points.
+
+                To start a new game, press NEW GAME
+            </p>
+            <div class="close-icon"><i class="fas fa-times-circle"></i></div>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
+</html>
